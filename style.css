@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 100px;
+    height: 50px;
+    padding: 20px 25px;
+    color: #fff;
+    background-color: crimson;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    animation-name: btn_animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+}
+@keyframes btn_animation{
+    from{
+        transform: translateX(0);
+    }to{
+transform: translateX(400px) rotateX(90deg) scale(1.3);
+background-color: green;
+    }
+}
